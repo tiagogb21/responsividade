@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portal de Notícias</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/index.css" />
+        <style>
+            .top-header {
+                display: flex;
+                justify-content: space-between;
+                color: var(--text-color-primary);
+                padding: 3.2rem 2rem;
+            }
+
+            .top-header button, .content-search {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+            }
+
+            .top-header a {
+                text-transform: uppercase;
+                color: var(--brand-color-light);
+                font-weight: bold;
+                font-size: 2.4rem;
+            }
+
+            header nav {
+                border-top: 1px solid var(--brand-color-light);
+                border-bottom: 1px solid var(--brand-color-light);
+                padding: 3.2rem 2rem;
+            }
+
+            header nav ul {
+                display: flex;
+                justify-content: space-between;
+                color: var(--text-color-secondary);
+            }
+
+            main {
+                min-height: 100vh;
+                padding: 3.2rem 2rem;
+            }
+
+            .content-top {
+                display: flex;
+                gap: 1.6rem;
+            }
+
+            .content-top-news {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.6rem;
+            }
+
+            .principal-new, .secondary-new {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                color: var(--text-color-primary);
+                padding: 2.4rem;
+                gap: 0.8rem;
+            }
+
+            .principal-new{
+                background-image: url('./assets/imagens/Image\ 01.png');
+            }
+
+            .principal-new h1, .secondary-new h1 {
+                font-size: 2.4rem;
+            }
+
+            .principal-new p, .secondary-new p {
+                padding: 0.4rem 0.8rem;
+                text-transform: uppercase;
+                background-color: var(--brand-color-dark);
+                border-radius: 0.4rem;
+            }
+
+            .principal-new {
+                height: 44.6rem;
+            }
+
+            .secondary-new {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .secondary-new-1 {
+                background-image: url('./assets/imagens/Image\ 02.png');
+            }
+
+            .secondary-new-2 {
+                background-image: url('./assets/imagens/Image\ 03.png');
+            }
+
+            .secondary-new-3 {
+                background-image: url('./assets/imagens/Image\ 04.png');
+            }
+
+            .secondary-new-4 {
+                background-image: url('./assets/imagens/Image\ 05.png');
+            }
+
+            .secondary-new h2 {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <button>
+                    <img src="./assets/icons/menu.svg" alt="menu">
+                    Menu
+                </button>
+                <a href="/">tech news</a>
+                <div class="content-search">
+                    <span>buscar</span>
+                    <img src="./assets/icons/search.svg" alt="search">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Inteligência Artificial</a>
+                    </li>
+                    <li>
+                        <a href="/">Blockchain</a>
+                    </li>
+                    <li>
+                        <a href="/">Hologramas</a>
+                    </li>
+                    <li>
+                        <a href="/">Internet</a>
+                    </li>
+                    <li>
+                        <a href="/">Vestíveis</a>
+                    </li>
+                    <li>
+                        <a href="/">Realidade Aumentada</a>
+                    </li>
+                    <li>
+                        <a href="/">Realidade  Virtual</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content-top">
+                <div class="principal-new">
+                    <p>Robótica</p>
+                    <h1>Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.</h1>
+                </div>
+                <div class="content-top-news">
+                    <div class="secondary-new secondary-new-1">
+                        <p>Hologramas</p>
+                        <h2>Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!</h2>
+                    </div>
+                    <div class="secondary-new secondary-new-2">
+                        <p>Hologramas</p>
+                        <h2>Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comunicamos.</h2>
+                    </div>
+                    <div class="secondary-new secondary-new-3">
+                        <p>Vestíveis</p>
+                        <h2>Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal.</h2>
+                    </div>
+                    <div class="secondary-new secondary-new-4">
+                        <p>Realidade Virtual</p>
+                        <h2>Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem tradicional.</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+@import url("./reset.css");
+@import url("./vars.css");
+
+
+body {
+    font-size: 1.6rem;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 3.2rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 2rem;
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--skeleton-color);
+}
+
+header nav a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+main {
+    padding: 2.4rem 3.2rem;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    width: 59rem;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.user-info img {
+    width: 17.6rem;
+    height: 17.6rem;
+}
+
+.user-info h1 {
+    font-size: 3.2rem;
+    line-height: 125%;
+    font-weight: bold;
+}
+
+.user-info p {
+    text-align: justify;
+}
+
+.top-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.top-container ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.middle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.middle-container img:hover {
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 3.2rem;
+    color: var(--text-color-secondary);
+}
+
+footer div {
+    display: flex;
+    gap: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    .top-container, .top-container .user-info {
+        flex-direction: column;
+    }
+
+    .top-container .user-info {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .top-container ul {
+        width: 100%;
+    }
+
+    .sm-hidden {
+        display: none;
+    }
+
+    .middle-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        font-size: 1.4rem;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+}
